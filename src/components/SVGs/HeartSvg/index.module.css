@@ -1,0 +1,32 @@
+
+
+
+.likeIcon{
+    position: relative;
+    transition: 300ms;
+
+}
+
+.number{
+    position: absolute;
+    right: 9px;
+    background-color: #3A1151;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.likeIcon:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.currentPage{
+    fill: black;
+}

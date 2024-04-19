@@ -1,0 +1,37 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 6%;
+    min-height: 100vh;
+}
+
+.image {
+    width: 50%;
+}
+
+.about {
+    margin-top: 20px;
+}
+
+.category {
+    opacity: .6;
+    margin: 25px 0;
+}
+
+.category span {
+    font-weight: 600;
+}
+
+.price {
+    text-align: right;
+    font-size: 20px;
+}
+
+.addBtn {
+    background-color: #3A1151;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+}

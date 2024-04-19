@@ -26,12 +26,12 @@ function Product({ data }) {
     return (
         <>
             <div className={CSS.product} onClick={() => navigate(`/product/${data.id}`)}>
-                <div className={CSS.image}><img src={data.image} alt="" /></div>
+                <div className={CSS.image}><img src={data.grid_picture_url} alt="" /></div>
                 <div className={CSS.about}>
-                    <h3 className={CSS.title}>{data.title}</h3>
+                    <h3 className={CSS.title}>{data.name}</h3>
                     <p className={CSS.desc}>category: {data.category}</p>
                     <div className={CSS.lastLine}>
-                        <p className={CSS.price}>{data.price}$</p>
+                        <p className={CSS.price}>{(data.retail_price_cents)/100}$</p>
                         <HeartSvg onClick={handleClick} fill={isFavorite ? "red" : "rgba(0, 0, 0, 0.306)"} />
                     </div>
                 </div>

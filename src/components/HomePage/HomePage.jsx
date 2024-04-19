@@ -14,7 +14,14 @@ import Layout from '../Laout/Layout'
 function HomePage() {
     const [products, setProducts] = useState([])
     const [filteredProducts, setFilteredProducts] = useState([])
-    const data = useFetch('https://fakestoreapi.com/products')
+    const data = useFetch('/data/db.json')
+
+    const d = useFetch('/data/api.json')
+let res = d.map(item =>{
+    return item.category
+})
+
+console.log(res)
 
     useEffect(() => {
         setProducts(data)
@@ -45,3 +52,5 @@ function HomePage() {
 }
 
 export default HomePage
+
+

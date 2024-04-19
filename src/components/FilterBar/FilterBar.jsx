@@ -4,7 +4,7 @@ import CategoryBtn from '../CategoryBtn/CategoryBtn'
 import CSS from './filterBar.module.css'
 
 function FilterBar(){
-    const categories = useFetch('https://fakestoreapi.com/products/categories')
+    const categories = useFetch('/data/category.json')
     const [currentCat , setCurrentCat] = useState("All")
     return(
         <>

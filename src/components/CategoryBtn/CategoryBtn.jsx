@@ -6,11 +6,11 @@ import CSS from './categoryBtn.module.css'
 function CategoryBtn({ category, currentCat, setCurrentCat }) {
     let data;
     if (category == "All") {
-        data = useFetch('https://fakestoreapi.com/products')
+        data = useFetch('/data/db.json')
     }
 
     else {
-        data = useFetch(`https://fakestoreapi.com/products/category/${category}`)
+        data = useFetch(`/data/categories/${category}.json`)
     }
     const { setFilteredProducts } = useContext(Products)
 

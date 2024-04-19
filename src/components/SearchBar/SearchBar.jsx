@@ -10,7 +10,7 @@ function SearchBar() {
         let value = (ref.current.value).toLowerCase()
         setFilteredProducts([])
         products.map(item =>{
-            if((item.title).toLowerCase().includes(value))
+            if((item.name).toLowerCase().includes(value))
             setFilteredProducts((prev) => [...prev , item])
         })
     }

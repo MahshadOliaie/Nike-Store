@@ -1,7 +1,5 @@
-
-
-.container{
-    background-image: url(./firstPage.jpeg);
+.container {
+    background-image: url(/bg1.JPG);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -9,15 +7,42 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    animation: bg infinite 9s;
 }
 
 
-.startBtn{
-    width: 60%;
+.startBtn {
+    width: 50%;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(2px);
     padding: 15px 0;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(69, 69, 69);
     margin-bottom: 50px;
+    transition: 500ms;
+}
+
+.startBtn:hover{
+    width: 60%;
+    transition: 500ms;
+}
+
+
+@keyframes bg {
+    33% {
+        background-image: url(/bg2.JPG);
+        background-size: cover;
+    }
+
+    66% {
+        background-image: url(/bg3.jpg);
+        background-size: cover;
+
+    }
+    100% {
+        background-image: url(/bg1.JPG);
+        background-size: cover;
+
+    }
 }

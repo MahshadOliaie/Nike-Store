@@ -1,0 +1,16 @@
+
+
+.cartContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 6%;
+    margin-bottom: 20px;
+    min-height: 75vh;
+}
+
+.heading{
+    padding: 0 6%;
+    font-size: 25px;
+}

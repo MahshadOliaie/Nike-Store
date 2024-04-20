@@ -16,13 +16,7 @@ function HomePage() {
     const [filteredProducts, setFilteredProducts] = useState([])
     const data = useFetch('/data/db.json')
 
-    const d = useFetch('/data/api.json')
-let res = d.map(item =>{
-    return item.category
-})
-
-console.log(res)
-
+    
     useEffect(() => {
         setProducts(data)
         setFilteredProducts(data)
@@ -52,5 +46,6 @@ console.log(res)
 }
 
 export default HomePage
+
 
 

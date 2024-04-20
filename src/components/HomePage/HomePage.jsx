@@ -32,8 +32,8 @@ function HomePage() {
             }}>
                 <Layout>
                     <div className={CSS.heading}>
-                        <p className={CSS.welcome}>Welcome, Flightio</p>
-                        <h1 className={CSS.title}>Bring Designer Lamps This Diwali</h1>
+                        <p className={CSS.welcome}>Just Do It</p>
+                        <h1 className={CSS.title}>New Arrivals From Jordan</h1>
                     </div>
 
                     <SearchBar />

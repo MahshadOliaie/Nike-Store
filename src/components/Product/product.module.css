@@ -49,3 +49,14 @@ img{
     align-items: center;
     justify-content: space-between;
 }
+
+.removeBtn{
+    background-color: rgb(194, 194, 194);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.removeBtn:hover{
+    background-color: rgb(184, 184, 184);
+}

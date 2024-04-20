@@ -14,7 +14,7 @@ function FavoritePage() {
                 <div className={CSS.favoriteContainer}>
                     {(favoriteItems.length > 0) ?
                         favoriteItems.map(item => {
-                            return <Product key={item.id} data={item} />
+                            return <Product key={item.id} data={item} hasHeart />
                         }) :
                         <p>there is no favorite item</p>
                     }

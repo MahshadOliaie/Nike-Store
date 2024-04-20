@@ -11,7 +11,7 @@ function ProductsContainer() {
             <div className={CSS.productsContainer}>
                 {
                     filteredProducts.map((item) => {
-                        return <Product key={item.id} data={item} />
+                        return <Product key={item.id} data={item} hasHeart />
                     })
                 }
             </div>

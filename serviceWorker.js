@@ -9,12 +9,12 @@ const urlsToCache = [
     '/bar.svg',
     '/logo.png',
     '/bar.user.jpg',
-    'https://fakestoreapi.com/products',
-    'https://fakestoreapi.com/products/categories',
-    'https://fakestoreapi.com/products/category/electronics',
-    'https://fakestoreapi.com/products/category/jewelery',
-    "https://fakestoreapi.com/products/category/men's clothing",
-    "https://fakestoreapi.com/products/category/women's clothing"
+    '/data/api.json',
+    '/data/db.json',
+    '/data/category.json',
+    '/data/categories/basketball',
+    "/data/categories/lifestyle",
+    "/data/categories/running"
 ]
 
 

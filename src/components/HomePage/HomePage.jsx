@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react'
 import FilterBar from '../FilterBar/FilterBar'
-import Header from '../Header/Header'
 import ProductsContainer from '../ProductsContainer/ProductsContainer'
 import SearchBar from '../SearchBar/SearchBar'
-import ToolBar from '../ToolBar/ToolBar'
 import CSS from './homePage.module.css'
 import Products from '../../context/products/Products'
 import useFetch from '../../hooks/useFetch/useFetch'
-import FavoriteItems from '../../context/favoriteItem/FavoriteItem'
 import Layout from '../Laout/Layout'
 
 

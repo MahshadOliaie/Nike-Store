@@ -1,0 +1,46 @@
+
+
+.runningSlide{
+    height: 80vh;
+    width: 100%;
+    background-image: url('/bg1.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.layout{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg , rgba(56, 56, 56, 0.336) , transparent);
+}
+
+.runningText{
+    position: absolute;
+    z-index: 2;
+    left: 6%;
+    bottom: 6%;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(53, 53, 53);
+}
+
+.runningText h2{
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.runningText p{
+    margin-bottom: 7px;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-shadow: none;
+    box-shadow: 1px 1px 5px rgba(74, 74, 74, 0.583);
+}

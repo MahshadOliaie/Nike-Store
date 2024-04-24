@@ -1,0 +1,37 @@
+
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 6%;
+    margin-top: 40px;
+}
+
+.media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding: 20px 0;
+}
+
+.media svg{
+    padding: 0px;
+}
+
+.media>div{
+    background-color: gray;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.facebook{
+    margin-left: 7px;
+}
+
+.footer p{
+    font-size: 14px;
+}

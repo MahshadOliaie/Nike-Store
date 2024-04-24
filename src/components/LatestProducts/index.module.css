@@ -25,7 +25,7 @@
 }
 
 .cardImage img{
-    width: 80%;
+    width: 85%;
     transition: 500ms;
 }
 
@@ -46,7 +46,7 @@
 .title{
     margin: 10px 0;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 

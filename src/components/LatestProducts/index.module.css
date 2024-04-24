@@ -1,0 +1,51 @@
+
+
+.latestContainer{
+    padding: 0 6%;
+    padding-top: 50px;
+}
+
+.cards{
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+}
+
+.card{
+    width: 55%;
+    flex-shrink: 0;
+}
+
+.cardImage{
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 237, 237);
+    overflow: hidden;
+}
+
+.cardImage img{
+    width: 80%;
+    transition: 500ms;
+}
+
+.cardImage img:hover{
+    transform: scale(1.08);
+    transition: 500ms;
+}
+
+.cardAbout{
+    width: 90%;
+}
+
+.price{
+    margin: 0;
+    font-size: 15px;
+}
+
+.title{
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+}

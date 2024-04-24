@@ -4,6 +4,7 @@
     justify-content: space-around;
     position: sticky;
     bottom: 0;
+    margin-top: 20px;
     fill: rgba(0, 0, 0, 0.306);
     background-color: white;
     width: 100%;

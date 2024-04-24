@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 import HomePage from "./components/HomePage/HomePage"
-import Starter from "./components/Starter/Starter"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import FavoritePage from "./components/FavoritePage/FavoritePage"
 import FavoriteItems from "./context/favoriteItem/FavoriteItem"
 import ProductDetail from "./components/ProductDetail/ProductDetail"
 import CartPage from "./components/CartPage/CartPage"
 import Cart from "./context/Cart/Cart"
+import ProductsPage from "./components/ProductsPage/ProductsPage"
 
 
 
@@ -43,6 +43,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<HomePage />} />
                   <Route path="/favorite" element={<FavoritePage />} />
+                  <Route path="/products" element={<ProductsPage />} />
                   <Route path="/cart" element={<CartPage />} />
                   <Route path="/product/:id" element={<ProductDetail />} />
                 </Routes>

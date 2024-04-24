@@ -1,8 +1,7 @@
 
 
 .latestContainer{
-    padding: 0 6%;
-    padding-top: 50px;
+    padding: 50px 6%;
 }
 
 .cards{
@@ -48,4 +47,20 @@
     margin: 10px 0;
     font-size: 15px;
     font-weight: 500;
+}
+
+
+.headingTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headingTitle p{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.headingTitle p:hover{
+    text-decoration: underline;
 }

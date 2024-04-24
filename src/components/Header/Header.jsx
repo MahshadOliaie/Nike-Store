@@ -17,7 +17,7 @@ function Header() {
                 {(isLoggedIn) ?
                     <div className={CSS.userPhoto}><img src="./user.jpg" alt="" /></div>
                     :
-                    <p className={CSS.loginBtn}>LOGIN</p>
+                    <p className={CSS.loginBtn} onClick={() => nav('/login')}>LOGIN</p>
                 }
             </div>
             {(menuOppened) &&

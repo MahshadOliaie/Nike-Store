@@ -7,30 +7,28 @@ import ProductDetail from "./components/ProductDetail/ProductDetail"
 import CartPage from "./components/CartPage/CartPage"
 import Cart from "./context/Cart/Cart"
 import ProductsPage from "./components/ProductsPage/ProductsPage"
+import LoginState from "./context/LoginState/LoginState"
 
 
 
 function App() {
-  // const [isFirstTime, setIsFirstTime] = useState(localStorage.getItem("isFirstTime") || "true")
   const [favoriteItems, setFavoriteItems] = useState(JSON.parse(localStorage.getItem("favoriteItems")) || [])
-  const [carts , setCarts] = useState(JSON.parse(localStorage.getItem("carts")) || [])
-
-
-  // function isFirstTimeSetter() {
-  //   localStorage.setItem("isFirstTime", "false")
-  //   setIsFirstTime(localStorage.getItem("isFirstTime"))
-  // }
+  const [carts, setCarts] = useState(JSON.parse(localStorage.getItem("carts")) || [])
+  const [isLoggedIn, setIsLoggedIn] = useState(JSON.parse(localStorage.getItem("isLoggedIn")) || false)
 
   useEffect(() => {
     localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems))
     localStorage.setItem("carts", JSON.stringify(carts))
 
-  }, [favoriteItems , carts])
+  }, [favoriteItems, carts])
 
   return (
     <>
       {
-        // (isFirstTime == "true") ? <Starter onClick={isFirstTimeSetter} /> :
+        <LoginState.Provider value={{
+          isLoggedIn,
+          setIsLoggedIn
+        }}>
           <FavoriteItems.Provider value={{
             favoriteItems,
             setFavoriteItems
@@ -50,6 +48,7 @@ function App() {
               </BrowserRouter>
             </Cart.Provider>
           </FavoriteItems.Provider>
+        </LoginState.Provider>
 
       }
 

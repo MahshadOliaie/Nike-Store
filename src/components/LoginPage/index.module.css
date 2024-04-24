@@ -121,6 +121,10 @@ a{
     transition: 300ms;
 }
 
+button{
+    color: inherit;
+}
+
 .error{
     color: red;
     margin: 0;

@@ -8,6 +8,7 @@ import CartPage from "./components/CartPage/CartPage"
 import Cart from "./context/Cart/Cart"
 import ProductsPage from "./components/ProductsPage/ProductsPage"
 import LoginState from "./context/LoginState/LoginState"
+import LoginPage from "./components/LoginPage/LoginPage"
 
 
 
@@ -19,8 +20,9 @@ function App() {
   useEffect(() => {
     localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems))
     localStorage.setItem("carts", JSON.stringify(carts))
+    localStorage.setItem("isLoggedIn", JSON.stringify(isLoggedIn))
 
-  }, [favoriteItems, carts])
+  }, [favoriteItems, carts , isLoggedIn])
 
   return (
     <>
@@ -44,6 +46,7 @@ function App() {
                   <Route path="/products" element={<ProductsPage />} />
                   <Route path="/cart" element={<CartPage />} />
                   <Route path="/product/:id" element={<ProductDetail />} />
+                  <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />
                 </Routes>
               </BrowserRouter>
             </Cart.Provider>

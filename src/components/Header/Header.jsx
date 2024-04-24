@@ -4,7 +4,7 @@ import LoginState from '../../context/LoginState/LoginState';
 import { useNavigate } from 'react-router-dom';
 
 function Header() {
-    const { isLoggedIn } = useContext(LoginState)
+    const { isLoggedIn, setIsLoggedIn } = useContext(LoginState)
     const [menuOppened, setMenuOppened] = useState(false)
     const nav = useNavigate()
 
@@ -22,17 +22,14 @@ function Header() {
             </div>
             {(menuOppened) &&
                 <div className={CSS.menu}>
-                    <img src="/logo.jpg" alt="logo" onClick={()=> nav('/')} />
-                    <p onClick={()=> nav('/products')}>PRODUCTS</p>
-                    <p onClick={()=> nav('/favorite')}>FAVORITES</p>
-                    <p onClick={()=> nav('/cart')}>MY BAG</p>
+                    <img src="/logo.jpg" alt="logo" onClick={() => nav('/')} />
+                    <p onClick={() => nav('/products')}>PRODUCTS</p>
+                    <p onClick={() => nav('/favorite')}>FAVORITES</p>
+                    <p onClick={() => nav('/cart')}>MY BAG</p>
                     {(isLoggedIn) ?
-                        <>
-                            <p>MY ACCOUNT</p>
-                            <p className={CSS.login}>LOG OUT</p>
-                        </>
+                        <p className={CSS.login} onClick={() => { setIsLoggedIn(false); setMenuOppened(false) }}>LOG OUT</p>
                         :
-                        <p className={CSS.login}>LOGIN</p>
+                        <p className={CSS.login} onClick={() => nav('/login')}>LOGIN</p>
                     }
                 </div>
             }

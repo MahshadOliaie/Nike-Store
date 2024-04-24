@@ -1,0 +1,9 @@
+
+
+.slider{
+    width: 100%;
+    height: 80vh;
+    background-image: url('/02.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

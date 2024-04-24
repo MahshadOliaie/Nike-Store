@@ -11,15 +11,15 @@ import Cart from "./context/Cart/Cart"
 
 
 function App() {
-  const [isFirstTime, setIsFirstTime] = useState(localStorage.getItem("isFirstTime") || "true")
+  // const [isFirstTime, setIsFirstTime] = useState(localStorage.getItem("isFirstTime") || "true")
   const [favoriteItems, setFavoriteItems] = useState(JSON.parse(localStorage.getItem("favoriteItems")) || [])
   const [carts , setCarts] = useState(JSON.parse(localStorage.getItem("carts")) || [])
 
 
-  function isFirstTimeSetter() {
-    localStorage.setItem("isFirstTime", "false")
-    setIsFirstTime(localStorage.getItem("isFirstTime"))
-  }
+  // function isFirstTimeSetter() {
+  //   localStorage.setItem("isFirstTime", "false")
+  //   setIsFirstTime(localStorage.getItem("isFirstTime"))
+  // }
 
   useEffect(() => {
     localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems))
@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       {
-        (isFirstTime == "true") ? <Starter onClick={isFirstTimeSetter} /> :
+        // (isFirstTime == "true") ? <Starter onClick={isFirstTimeSetter} /> :
           <FavoriteItems.Provider value={{
             favoriteItems,
             setFavoriteItems

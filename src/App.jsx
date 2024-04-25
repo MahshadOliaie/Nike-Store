@@ -9,6 +9,7 @@ import Cart from "./context/Cart/Cart"
 import ProductsPage from "./components/ProductsPage/ProductsPage"
 import LoginState from "./context/LoginState/LoginState"
 import LoginPage from "./components/LoginPage/LoginPage"
+import CustomersPage from "./components/CustomersPage/CustomersPage"
 
 
 
@@ -46,6 +47,7 @@ function App() {
                   <Route path="/products" element={<ProductsPage />} />
                   <Route path="/cart" element={<CartPage />} />
                   <Route path="/product/:id" element={<ProductDetail />} />
+                  <Route path="/customers" element={<CustomersPage />} />
                   <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />
                 </Routes>
               </BrowserRouter>

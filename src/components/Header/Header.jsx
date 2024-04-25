@@ -26,6 +26,7 @@ function Header() {
                     <p onClick={() => nav('/products')}>PRODUCTS</p>
                     <p onClick={() => nav('/favorite')}>FAVORITES</p>
                     <p onClick={() => nav('/cart')}>MY BAG</p>
+                    <p onClick={() => nav('/customers')}>CUSTOMERS GROUP</p>
                     {(isLoggedIn) ?
                         <p className={CSS.login} onClick={() => { setIsLoggedIn(false); setMenuOppened(false) }}>LOG OUT</p>
                         :

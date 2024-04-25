@@ -8,13 +8,23 @@ const urlsToCache = [
     '/index.css',
     '/bar.svg',
     '/logo.png',
-    '/bar.user.jpg',
+    '/logo.jpg',
+    '/user.jpg',
     '/data/api.json',
     '/data/db.json',
     '/data/category.json',
     '/data/categories/basketball',
     "/data/categories/lifestyle",
-    "/data/categories/running"
+    "/data/categories/running",
+    '/01.JPG',
+    '/02.JPG',
+    '/03.JPG',
+    '/04.JPG',
+    '/05.JPG',
+    '/bg1.JPG',
+    '/loginBg.jpg',
+
+
 ]
 
 
